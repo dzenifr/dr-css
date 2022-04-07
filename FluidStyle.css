@@ -1,0 +1,926 @@
+div.IATS_Div {
+	background-color:#FFFFFF;
+	width:100% !important;
+	min-width:280px;
+	margin:0;
+	padding:2%;
+	display:block;
+	border:1px solid #999;
+	border-radius:10px;
+	/*box-shadow:5px 5px 0px #aaa;*/
+}
+label.IATS_EventTitle {
+	font-size:2em;
+	font-family:Century Gothic, sans-serif;
+	font-weight:bold;
+	padding:0;
+	float:left;
+	clear:both;
+	margin:0px;
+	display:block;
+	width:100%;
+	text-transform:uppercase;
+}
+span.IATS_EventDescription {
+	display:block;
+	font-size:0.9em;
+	padding:0;
+	margin:10px 0;
+	clear:both;
+	float:left;
+	width:100%
+}
+span.IATS_AmountSpan
+{
+  padding:0 0 0 10px;
+  display:flex;
+  margin-top:5px;
+}
+span.IATS_AmountSectionTitle, span.IATS_PaymentSectionTitle {
+    display:block;
+	font-size:1.5em;
+	font-weight:bold;
+    padding:10px 0 0 0;
+	float:left;
+	clear:both;
+	margin:0;
+	width:100%;
+    border-top:1px solid #999;
+}
+label.IATS_RadioAmtLabel {
+	display:block;
+	float:left;
+	line-height:30px;
+	margin:0 0 0 10px;
+	clear:none;
+	height:30px;
+}
+label.IATS_QtyLabel {
+	border:none;
+	display:inline;
+	clear:none;
+	float:none;
+	text-align:right;
+	margin:0 5px 0 0;
+	vertical-align:middle;
+}
+div.IATS_QtyDiv {
+	text-align:right;
+	margin:0;
+	display:block;
+	float:right;
+	clear:none;
+	height:30px;
+	line-height:30px;
+	min-width:130px;
+}
+div#IATS_Payment_CreditCardDiv {
+	display:block;
+	width:100%;
+	clear:both;
+	float:left;
+	padding:0;
+	margin:10px 0;
+}
+div#IATS_PaymentItemDiv_Address, div#IATS_AmountListItemDiv_Other, div#IATS_PaymentItemDiv_Comment, div#IATS_Payment_AccountNumberDiv {
+    clear:both;
+    width:98%;
+}
+div#IATS_PaymentItemDiv_FirstName, div#IATS_ReoccurringDiv_BeginDate {
+    clear:both;
+    float:left;
+}
+input#IATS_PaymentItemInput_Address, div#IATS_PaymentItemDiv_City, div#IATS_PaymentItemDiv_EMail, div#IATS_PaymentItemDiv_Item1, div#IATS_Payment_USACHAccountNoDiv {
+    clear:both;
+}
+div#IATS_Payment_ExpiryDateDiv {
+    margin-right:-1%;
+    width:48%;
+	float:left;
+	clear:both;
+}
+select#IATS_Payment_ExpiryMonth, select#IATS_Payment_ExpiryYear {
+    width:48%;
+    margin-right:2%;
+	border:1px solid #999;
+	border-radius:5px;
+	height:30px;
+	text-align:center;
+}
+select#IATS_Payment_ExpiryYear {
+    margin:0 !important;
+}
+div#IATS_Payment_CVV2Div {
+	margin-left:1%;
+}
+input#IATS_Payment_CVV2 {
+    width:48%;
+}
+div#IATS_Payment_DebitDiv {
+	width:100%;
+	margin:0;
+}
+img#tcalico_0, img#tcalico_1 {
+	width:28px;
+	height:28px;
+}
+div#IATS_Payment_ACHAgreementDiv {
+	clear:both;
+	width:100%;
+	padding:2% 0;
+}
+div.IATS_TotalDiv {
+	text-align:right;
+	width:98%;
+	font-size:1.5em;
+	color:#FF7000;
+	margin:1%;
+	padding:1% 0;
+	display:block !important;
+	float:right;
+	clear:both;
+	border-top:1px dashed #999;
+}
+div.IATS_RecurringTotalDiv {
+	text-align:left;
+	margin-top:0.5em;
+	margin-botton:0.5em;
+}
+input.IATS_QtyInput {
+	width:20px;
+	height:20px;
+	border:1px solid #999;
+	border-radius:5px;
+	text-align:center;
+	padding:1px;
+	margin:0;
+}
+label.IATS_RadioPaymentLabel {
+	display:block;
+	clear:none;
+	float:left;
+	height:30px;
+	line-height:30px;
+	margin:0 0 0 1%;
+	/*width:39%;*/
+	min-width:100px;
+}
+div.IATS_AmountItemDiv, div.IATS_ProfileItemDiv, div.IATS_PaymentItemDiv {
+	display:block;
+	width:98%;
+	padding:0;
+	float:left;
+	margin:1%;
+	font-size:1em;
+}
+div.IATS_PaymentItemDiv {
+	width:46%;
+	min-height:65px;
+	margin:0 2%;
+}
+div.IATS_SelectItemsDiv {
+	font-size:0.9em;
+	width:100%;
+	overflow:visible;
+	overflow-x:visible;
+	padding:.2em 0 .2em 0;
+	margin:0 0.1em 0.59em 0.9em;
+}
+div.IATS_SelectItemsSubDiv {
+    clear:left;
+	font-size:0.9em;
+	width:100%;
+	overflow:visible;
+	overflow-x:visible;
+	padding:.2em 0 .2em 0;
+	margin:0 0.1em 0.59em 1.2em;
+}
+div.IATS_SelectItemsSubDivOnTop {
+    clear:left;
+	font-size:0.9em;
+	width:100%;
+	overflow:visible;
+	overflow-x:visible;
+	padding:.2em 0 .2em 0;
+	margin:0 0.1em 0.59em 0.1em
+}
+div.IATS_PaymentFrequencyItemDiv, div.IATS_PaymentTypeItemDiv {
+	display:block;
+	clear:both;
+	float:left;
+	font-size:0.9em;
+	width:96%;
+	padding:0;
+	margin:2%;
+}
+label.IATS_PaymentLabelOnLeft {
+	float:left;
+	clear:both;
+	min-width:140px; 
+	width:100%;
+	line-height:30px;
+	display:block;
+	padding:0;
+}
+label.IATS_PaymentLongItem {
+	float:left;
+	width:100%; 
+	padding-left:0.1em;
+}
+label.IATS_PaymentLabelOnTop {
+	float:left;
+	clear:both;
+	min-width:140px; 
+	width:100%;
+	line-height:30px;
+	display:block;
+	padding:0;
+}
+span.IATS_PaymentLabelOnTop.IATS_OtherAmtMinimum {
+	display:inline;
+	clear:none;
+	float:left;
+	margin:0 0 0 10px;
+	line-height:30px;
+}
+span.IATS_PaymentLabelOnLeft.IATS_OtherAmtMinimum {
+	display:inline;
+	clear:none;
+	float:left;
+	margin:0 0 0 10px;
+	line-height:30px;
+}
+span.IATS_SecuritySectionTitle {
+    display:block;
+	font-size:1.2em;
+	font-weight:bold;
+	padding:0.5em 0 0em 0;
+	float:none;
+	clear:both;
+	margin:0px;
+	width:100%;
+}
+div.IATS_AmountDiv, div.IATS_ProfileDiv, div.IATS_PaymentDiv, div.IATS_FooterDiv, div.IATS_ResponseDiv {
+	display:block;
+	clear:both;
+	float:left;
+	font-size:0.9em;
+	width:100%;
+	padding:0;
+}
+span.IATS_PaymentSectionNote {
+	display:block;
+	font-size:0.9em;
+	padding:0;
+	margin:10px 0;
+	clear:both;
+	float:left;
+	width:100%;
+	font-style:italic;
+}
+label.IATS_InputRequired {
+	font-weight:bold;
+}
+textarea.IATS_PaymentInputField {
+	float:left;
+	clear:both;
+	width:96%;
+	max-width:1366px;
+	height:60px;
+	padding-left:5px;
+	border:1px solid #999;
+	border-radius:5px;
+}
+input.IATS_PaymentInputField { 
+	width:96%;
+	border:1px solid #999;
+	border-radius:5px;
+	height:26px;
+	margin:0;
+	float:left;
+	padding-left:5px;
+}
+input.IATS_PaymentDateInputField {
+	width:65%;
+	border:1px solid #999;
+	border-radius:5px;
+	height:26px;
+	margin:0;
+	float:left;
+	padding-left:5px;
+	margin-right:5px;
+}
+select.IATS_PaymentReoccurringInputField {
+	width:98%;
+	height:30px;
+	border:1px solid #999;
+	border-radius:5px;
+	padding-left:5px;
+}
+span.IATS_PaymentLabelOnLeft.IATS_PaymentItemErrorMessage, span.IATS_PaymentLabelOnLeft.IATS_PaymentMinimumErrorMessage {
+	display:none;
+	clear:both !important;
+	float:left;
+	font-size:0.8em;	
+	color:#FF0000 !important;
+	font-style:italic !important;
+	margin:0 !important;
+}
+span.IATS_ErrorMessage {
+	margin:0 !important;
+	font-size:0.9em;
+	color:#FF0000;
+}
+span.IATS_PaymentLabelOnTop.IATS_PaymentItemErrorMessage {
+	display:none;
+	font-size:0.9em;	
+	margin-left:5px;
+	color:red;		
+}
+span.IATS_PaymentLabelOnTop.IATS_PaymentMinimumErrorMessage {
+	display:none;
+	font-size:0.9em;	
+	margin-left:5px;
+	color:red;		
+}
+input.IATS_AccountNumberField, input.IATS_CVV2Field, input.IATS_ExpiryMonthField, input.IATS_ExpiryYearField {
+	width:23%; 
+	float:left;
+	margin-right:1%;
+	border:1px solid #999;  border-radius:5px;  
+	height:26px;
+	text-align:left;
+	padding:0;
+}
+select.IATS_PaymentType {
+	width:144px;
+	margin-right:4px;
+}
+input.IATS_ACHInput, select.IATS_ACHInput {
+	width:65%;
+	border:1px solid #999;
+	border-radius:5px;
+	height:26px;
+	margin:0 2% 0 0;
+	float:left;
+	padding-left:5px;
+}
+img[alt="Help"] {
+	margin-top:1px;
+	width:28px;
+	height:28px;
+}
+select.IATS_ACHInput {
+	width:98%;
+	height:30px;
+}
+img.IATS_ACHHelp {
+	border:none;
+}
+input.IATS_LastAccountNumberField {
+	width:23%; 
+	margin:0;
+	border:1px solid #999;  border-radius:5px;  
+	height:26px;
+	padding:0;
+	text-align:center;
+}
+input.IATS_RadioAmtButton, input.IATS_RadioPaymentButton {
+	display:block;
+	clear:none;
+	float:left;
+	height:30px;
+	width:20px;
+	line-height:30px;
+	margin:0;
+}
+
+/* --------------- */
+
+span.IATS_Action {
+	display:block;
+	width:100%;
+	padding:0;
+	margin:10px auto;
+	clear:both;
+	float:left;
+}
+
+button.IATS_Action {
+	font-size:2em;
+	display:block;
+	margin:0 auto;
+	width:200px;
+	padding:5px;
+	border-radius:5px;
+	border:none;
+	background-color:#22A84D;
+	color:#FFF;
+}
+button.IATS_IncreaseQty {
+	border:none;
+	display:inline;
+	width:18px;
+	height:18px;
+	margin:0;
+	padding:1px;
+	text-align:center;
+	background-color:#CECECE;
+}
+#IATS_Div a.button {
+    background: transparent url('bg_button_a.gif') no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+select.IATS_PaymentInputField { 
+	width:98%;
+	height:30px;
+	border:1px solid #999;
+	border-radius:5px;
+	padding-left:5px;
+}
+select.IATS_PaymentTitleInputField {
+	width:100%; 
+	height:30px;
+	border:1px solid #999;
+	border-radius:5px;
+	padding-left:5px;
+}
+div.IATS_ErrorMsgDiv {
+	visibility:hidden;
+	font-size:0.9em;
+	width:100%;
+	padding:0;
+	margin:0;
+	text-align:center;
+}
+div.IATS_FooterDiv {
+	display:block;
+	font-size:0.9em;
+	width:100%;
+	padding:.2em 0 .2em 0;
+}
+span.IATS_ResponseHeader, span.IATS_ResponseFooter {
+    display:block;
+	font-size:1.2em;
+	font-weight:bold;
+	padding:0.5em 0 0em 0;
+	float:none;
+	clear:both;
+	margin:0px;
+	width:100%;
+}
+div.IATS_ResponseItemDiv {
+    display:block;  
+    width:98%;
+    padding:0;
+    float:left;
+    margin:1%;
+    font-size:1em;
+}
+span.IATS_ResponseStatus {
+    display:block;
+	font-size:1.2em;
+	font-weight:bold;
+	padding:0.5em 0 0em 0;
+	float:none;
+	clear:both;
+	margin:0px;
+	width:100%;
+}
+input.IATS_OtherAmount {
+	margin:0pt 0pt 0pt 10px;
+	width:60px;
+	height:26px;
+	padding:1px;
+	text-align:center;
+	display:block;
+	float:left;
+	border:1px solid #999;
+	border-radius:5px;
+}
+div.IATS_SecureDataDiv {
+	display:block;
+	font-size:0.9em;
+	width:100%;
+	clear:both;
+	margin:0 0 0 2%;
+	padding:0;
+}
+div.IATS_SocialMediaDiv {
+	display:block;
+	font-size:0.8em;
+	width:100%;
+	overflow:visible;
+	overflow-x:visible;
+	padding:2em 0 .2em 0;
+	position:center;
+}
+a.IATS_SocialLink {
+	text-decoration:none;
+}
+div.IATS_EmbedFormDiv {
+	margin-left:50px;
+	padding:0.5em 0 0 0;
+}
+a.IATS_EmbedFormButton {
+	background:url(./img/embedThisForm.png) center no-repeat;
+}
+button.IATS_EmbedFormButton {
+	height:auto;
+	width:100%;
+	font-size:0.8em;
+    padding:0.2em 0 .2em 0.5em;
+}
+input.IATS_EmbedFormScript {
+	width:300px;
+	readonly:true;
+}
+a.k_closeSnippet {
+	display:block;
+	clear:none;
+	float:left;
+	width:20px;
+	height:20px;
+	background:url(./img/close.bmp) center no-repeat;
+	cursor:pointer; 
+}
+div.IATS_SecurityFormDiv {
+	width:100%;
+	border:none;
+	padding:0;
+}
+div.IATS_LearMoreDiv {
+	//height:auto;
+	//width:100%;
+	//border:1.5px solid;
+	//overflow:visible;
+	////padding-left:10px;
+	//padding-bottom:15px;
+	//position:absolute;
+	//background-color:#FFFFFF;
+	//layer-background-color:#EEF0E4;
+	//display:block;
+	////left:50px;
+	//top:30px;
+	font-size:0.8em;
+	background-color:#F4F4F4;
+	border:1px solid #CCC;
+	height:auto;
+	width:200px;
+	padding:5px;
+	display:none;
+	position:absolute;
+}
+span.k_socialIcon {
+	display:block;
+	float:left;
+	background-position:center;
+	background-repeat:no-repeat;
+	line-height:16px;
+	width:16px;
+	height:16px;
+	margin-right:0px;	
+}
+div.k_shareThisFormBlock {
+	width:180px;
+	position:relative;
+	margin:13px auto;
+}
+div.k_atLinkBlock {
+	display:block;
+	padding:0px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	line-height:18px;
+	height:18px;
+	overflow:hidden;
+	color:#6b6b6b;
+}
+div.kimbiaDiv div.k_atLinkBlock a.k_shareLabel, div.kimbiaDiv div.k_atLinkBlock a.k_shareLabel:hover, div.kimbiaDiv div.k_atLinkBlock a.k_shareLabel:visited {
+	float:left;
+	font-weight:bold;
+	padding:0 4px 0 0;
+	/* defensive settings */
+	border:none;
+	text-decoration:none;
+	margin:0px;
+	cursor:default;
+}
+div.kimbiaDiv div.k_atLinkBlock span.k_separator {
+	display:inline;
+	float:left;
+	margin:0 2px 0 2px;
+	font-size:11px;
+	color:#d2d2d2;
+	line-height:16px;
+}
+span.IATS_ConnectMessage {
+	text-align:center;
+}
+div.IATS_DefaultTotalDiv {
+	text-align:left;
+}
+
+/* UK ----------------------------------------------- */
+div.IATS_DirectDebitDiv {
+	width:100%;
+	overflow:visible;
+	overflow-x:visible;
+}
+label.IATS_Payment_DirectDebit_LabelOnLeft {
+	float:left;
+	width:100px; 
+	padding-left:0.1em;
+}
+div.IATS_Payment_DirectDebitPage3_ItemDiv {
+	width:200px;
+	text-align:right;
+	float:left;
+	margin-right:10px;
+}
+label.IATS_Payment_DirectDebit_LabelOnTop {
+	float:none;
+	padding-left:0.1em;
+	padding-bottom:0.3em;
+	clear:both;
+	font-weight:600;
+}
+input.IATS_Payment_DirectDebit_InputField {
+	width:120px; 
+	border:1px solid #999;
+}
+select.IATS_Payment_DirectDebit_InputField {
+	width:120px; 
+	border:1px solid #999;
+}
+div.IATS_Payment_DirectDebit_ItemDiv {
+	display:block;
+	font-size:0.9em;
+	width:100%;
+	overflow:visible;
+	overflow-x:visible;
+	padding:.2em 0 .2em 0;
+	margin:0 0.1em 0.59em 0.1em
+}
+div.right_col {
+    margin-left:50%;
+    min-height:60px;
+    padding:5px;
+    
+}
+div.left_col {
+    float:left;
+    margin:0;
+    padding:5px;
+}
+div.IATS_Payment_UKDirectDebitPage5left_column {
+    float:left;
+    margin:0;
+    padding:1em;
+    width:45%;
+}
+div.IATS_Payment_UKDirectDebitPage5right_column {
+    margin-left:50%;
+    padding:1em;
+    width:45%;
+}
+td.IATS_Payment_UKDirectDebitPage5with_border {
+    border-bottom:1px solid black;
+}
+table.IATS_Payment_UKDirectDebitPage5Tablewith_border {
+	border-left:1px solid black;
+	border-right:1px solid black;
+	border-top:1px solid black;
+}
+div.IATS_Payment_UKDirectDebitPage3Right_col {
+    margin-left:50%;
+    margin-top:70px;
+    min-height:60px;
+    padding:5px;
+    height:420px;
+}
+div.IATS_Payment_UKDirectDebitPage3Left_col {
+    float:left;
+    margin:0;
+    margin-top:70px;
+    padding:5px;
+    height:420px;
+}
+div.IATS_Payment_UKDirectDebitPage5Right_col {
+    margin-left:50%;
+    margin-top:70px;
+    min-height:60px;
+    padding:5px;
+    height:520px;
+}
+div.IATS_Payment_UKDirectDebitPage5Left_col {
+    float:left;
+    margin:0;
+    margin-top:70px;
+    padding:5px;
+    height:520px;
+}
+td.IATS_Payment_UKDirectDebitPage5DelarationHeader {
+	padding:0px; 
+	font-weight:bold; 
+	font-size:20px; 
+	text-align:center;
+}
+div.IATS_Payment_DirectDebitPage3Value {
+	width:220px; 
+	border:1.5px solid #999;
+	padding:2px 0 2px 5px;
+	letter-spacing:.2em;
+	height:13px;
+	margin-top:2px;
+	margin-left:0px;
+}
+div.IATS_Payment_DirectDebitPage5Value {
+	width:280px; 
+	border:1.5px solid #999;
+	padding:2px 0 2px 5px;
+	letter-spacing:.2em;
+	height:13px;
+	margin-top:2px;
+	margin-left:0px;
+}
+div.IATS_Payment_DirectDebitPage5PayerInfo {
+    border:1px solid black;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:1em;
+    width:90%;
+}
+div.IATS_Payment_DirectDebitPage5PayerText {
+    text-align:center;
+    font-size:9px;
+}
+span.IATS_Payment_DirectDebitPage3Value {
+	width:200px; 
+	border:1.5px solid #999;
+	padding:2px 0 2px 0;
+	letter-spacing:.2em;
+	height:13px;
+	margin-top:2px;
+}
+span.IATS_Payment_DirectDebitPage3Value {
+	width:195px; 
+	border:1px solid #999;
+	padding-left:10px;
+}
+div.IATS_Payment_DirectDebitInfo {
+    border:1px solid #7E7E7E;
+    margin-bottom:20px;
+    margin-top:10px;
+    padding:10px;
+    font-family:arial; 
+    font-size:12px;
+    height:auto;
+    width:100%;
+}
+div.IATS_Payment_DirectDebitHeader {
+	background-color:#EAEAEA;
+	padding:10px 0 10px 5px;
+	font-size:18px;
+}
+div.IATS_Payment_DirectDebitPages3SummaryHeader {
+	margin:0 0 5px 5px;
+}
+input.IATS_Payment_DirectDebitPage3Button {
+    font-size:0.8em;
+    padding:0.2em 0 .2em 0;
+    margin-right:40px;
+    width:80px;
+    text-align:center;
+}
+.IATS_AmountItemDiv li {
+    display:inline;
+    float:left;
+}
+.IATS_ShoppingCartList {
+	display:block;
+	font-size:0.9em;
+	width:100%;
+	overflow:visible;
+	overflow-x:visible;
+	padding:.2em 0 .2em 0;
+	margin:0 0.1em 0.59em 0.1em
+}
+.IATS_ShoppingCartList ul {
+    font-family: inherit;
+    list-style-position:inside;
+    border-bottom:1px solid #ccc;
+    height:auto;
+    float:left;
+    width:100%;
+}
+.IATS_ShoppingCartList ul.IATS_ShoppingCartTitle {
+    height:20px;
+    font-family: inherit;
+}
+.IATS_ShoppingCartList li {
+    display:inline;
+    float:left;
+    margin-right:5px;
+    width:15%;
+    text-align:right;
+    font-family: inherit;
+}
+.IATS_ShoppingCartList li.IATS_ShoppingCartLongItem {
+    margin-left:-35px;
+    width:30%;
+    text-align:left;
+}
+.IATS_ShoppingCartList li.IATS_ShoppingCartRightItem {
+	width:10%;
+	position:absolute;
+	right:0;
+}
+.IATS_ShoppingCartList li.IATS_ShoppingCartMediumItem {
+    width:70px;
+    text-align:right;
+}
+button.IATS_IncreaseQtyShort {
+	border-color:transparent;
+	border-width:0;
+	border:none;
+	display:inline;	
+	width:17px;
+}
+input.IATS_QtyInputShort {
+	width:20px; 
+	border:1px solid #999;
+	text-align:center;
+}
+.IATS_ShoppingCartItemName {
+	font-weight:bold;
+}
+.IATS_ShoppingCartAddButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:Verdana;
+	font-weight:bold;
+	font-style:normal;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+	position:absolute;
+	right:0;
+}
+.IATS_ShoppingCartAddButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}
+span.IATS_ShoppingCartPriceSpan {
+	width:10%;
+	text-align:left;
+	padding:5px 0 0 5px;
+	position:absolute;
+	right:50px;
+}
+.IATS_ShoppingCartOption1SelectList {
+	width:24%;
+}
+.IATS_ShoppingCartOption2SelectList {
+	width:70px;
+}
+.IATS_ShoppingCartProductSelectList {
+	width:100px;
+}
+ul.IATS_ShoppingCartList1 {
+	list-style-type:circle;
+	margin-left:-20px;
+}
+ul.IATS_ShoppingCartList1 li {
+	margin-bottom:15px;
+}
+.IATS_Span1 {
+	width:25%;
+	text-align:left;
+	display:inline-block;
+}
+.IATS_ShoppingCartItemDiv {
+	font-size:0.9em;
+	font-family: inherit;
+}
+.IATS_AmountItemDiv select {
+	font-size:0.9em;
+}
